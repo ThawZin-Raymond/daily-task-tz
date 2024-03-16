@@ -80,7 +80,7 @@ const PomodoroTimer = () => {
   };
 
   return (
-    <div className="bg-slate-950 ">
+    <div className="bg-slate-950 h-screen ">
       <nav className="bg-gray-800 p-4">
         <div className="max-w-6xl mx-auto flex justify-between items-center">
           <div className="flex items-center">
