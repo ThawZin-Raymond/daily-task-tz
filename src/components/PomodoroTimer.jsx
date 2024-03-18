@@ -28,6 +28,24 @@ const PomodoroTimer = () => {
     }${secondsLeft}`;
   };
 
+  const playWorkTimeSound = () => {
+    const audio = new Audio("/sound/workTime-complete-sound.mp3");
+    audio
+      .play()
+      .catch((error) =>
+        console.error("Error playing the work time sound:" + error)
+      );
+  };
+
+  const playBreakTimeSound = () => {
+    const audio = new Audio("/sound/breakTime-complete-sound.mp3");
+    audio
+      .play()
+      .catch((error) =>
+        console.error("Error playing the break time sound:" + error)
+      );
+  };
+
   const startTimer = () => {
     setIsRunning(true);
 
@@ -35,6 +53,11 @@ const PomodoroTimer = () => {
       setInterval(() => {
         setTime((prevTime) => {
           if (prevTime === 0) {
+            if (isWorking) {
+              playWorkTimeSound();
+            } else {
+              playBreakTimeSound();
+            }
             setIsWorking((prevIsWorking) => !prevIsWorking);
             return isWorking ? breakTime * 60 : workTime * 60;
           }
@@ -160,9 +183,7 @@ const PomodoroTimer = () => {
         </div>
       </div>
       <div className="max-w-2xl mx-auto my-8 p-6 bg-slate-700 rounded-lg shadow-md">
-        <h1 className="text-3xl font-bold mb-4 text-white">
-          Pomodoro Timer
-        </h1>
+        <h1 className="text-3xl font-bold mb-4 text-white">Pomodoro Timer</h1>
         <p className="text-white">
           The Pomodoro Timer is a time management technique that involves
           breaking work into focused intervals, typically 25 minutes each
