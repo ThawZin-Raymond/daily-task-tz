@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 61d0cb573e148d6cb25b790b4aaa6d5bf955e360
 # daily-task-tz
 =======
 # Getting Started with Create React App
