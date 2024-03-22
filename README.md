@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # daily-task-tz
 =======
 # Getting Started with Create React App
