@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/daily-task-tz/static/css/main.ab7fd547.css",
+    "main.js": "/daily-task-tz/static/js/main.d75b4cdd.js",
+    "index.html": "/daily-task-tz/index.html",
+    "main.ab7fd547.css.map": "/daily-task-tz/static/css/main.ab7fd547.css.map",
+    "main.d75b4cdd.js.map": "/daily-task-tz/static/js/main.d75b4cdd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ab7fd547.css",
+    "static/js/main.d75b4cdd.js"
+  ]
+}
